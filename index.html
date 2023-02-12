@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="styles/styles.css">
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <script src="app.js" defer></script>
@@ -35,15 +36,17 @@
         </p>
       </article>
 
-      <form action="">
+      <form action="" novalidate>
         <div id="arrow-in-input">
-          <input type="text" placeholder="Email Address">
-          <button><img src="images/icon-arrow.svg" alt="icon-arrow_ok"></button>
-
+          <input id="input" type="email" placeholder="Email Address">
+          <button id="send_Button"><img src="images/icon-arrow.svg" alt="icon-arrow_ok"></button>
+          <span class="material-symbols-outlined">
+            error
+            </span>
         </div>
 
       </form>
-
+      
     </main>
 
     <footer>
