@@ -21,8 +21,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Csabooo/frontendmentor-04-base-apparel-coming-soon-page)
-- Live Site URL: [Add live site URL here](https://csabooo.github.io/frontendmentor-04-base-apparel-coming-soon-page)
+- Solution URL: [GitHub](https://github.com/Csabooo/frontendmentor-04-base-apparel-coming-soon-page)
+- Live Site URL: [GitHub Pages](https://csabooo.github.io/frontendmentor-04-base-apparel-coming-soon-page)
 
 ## My process
 
