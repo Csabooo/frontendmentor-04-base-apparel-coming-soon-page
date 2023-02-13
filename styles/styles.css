@@ -222,7 +222,7 @@ main p {
         flex-direction: column;
         order: 1;
         justify-content: center;
-        background-image: url("../images/bg-pattern-desktop.svg");
+        background-image: url(../images/bg-pattern-desktop.svg);
         background-repeat: no-repeat;
         background-size: cover;
 
