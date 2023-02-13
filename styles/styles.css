@@ -8,8 +8,9 @@
     --dark-grayish-red: hsl(0, 6%, 24%);
 
     /*arrow button*/
-/*     --arrow-active: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
- */    --arrow: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    /*     --arrow-active: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 80%, 86%));
+ */
+    --arrow: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
 * {
@@ -68,6 +69,11 @@ html {
     width: 100%;
 }
 
+
+#hero_desktop {
+    display: none;
+}
+
 #arrow-in-input {
     position: relative;
 }
@@ -75,8 +81,8 @@ html {
 #arrow-in-input button {
     position: absolute;
     top: 0;
-    right: 15px;
-    border-radius: 25px;
+    right: 0.8rem;
+    border-radius: 21.5rem;
     padding: 12px 25px;
     border: 1px none;
     background-image: var(--arrow);
@@ -133,14 +139,334 @@ main p {
 
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 600,
-  'GRAD' 0,
-  'opsz' 48;
-   color: hsl(0, 93%, 68%);
-   position: absolute;
-   top: 0.7rem;
-   right: 6rem;
-   visibility: hidden;
+    font-variation-settings:
+        'FILL'1,
+        'wght'600,
+        'GRAD'0,
+        'opsz'48;
+    color: hsl(0, 93%, 68%);
+    position: absolute;
+    top: 0.7rem;
+    right: 6rem;
+    visibility: hidden;
+}
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    html {
+        font-size: 1.2rem;
+    }
+
+    #container {
+        width: 100%;
+    }
+
+    article,
+    form {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    #arrow-in-input button {
+        position: absolute;
+        top: 0.1rem;
+        right: 1.8rem;
+        border-radius: 21.5rem;
+        padding: 0.8rem 1.7rem;
+        border: 1px none;
+        background-image: var(--arrow);
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL'1,
+            'wght'600,
+            'GRAD'0,
+            'opsz'48;
+        color: hsl(0, 93%, 68%);
+        position: absolute;
+        top: 0.7rem;
+        right: 6rem;
+        visibility: hidden;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+
+    h1 {
+        font-size: 3.5rem;
+        letter-spacing: 10px;
+    }
+
+    html {
+        font-size: 0.7rem;
+        box-sizing: border-box;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        height: 100vh;
+    }
+
+    #first {
+
+        display: flex;
+        flex-direction: column;
+        order: 1;
+        justify-content: center;
+    }
+
+    #hero {
+        object-fit: cover;
+        width: 100%;
+        display: none;
+    }
+
+    #hero_desktop {
+        display: block;
+        margin: 0 auto;
+        height: 100vh;
+        object-fit: cover;
+        max-inline-size: 100%;
+    }
+
+    input {
+        border-color: var(--desaturated-red);
+        border: 1px solid;
+    }
+
+    input[type=email] {
+        color: var(--desaturated-red);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        border-radius: 25px;
+        display: block;
+        margin: 0 auto;
+        padding: 1.2rem 0;
+        padding-left: 1rem;
+        outline: none;
+        width: 80%;
+    }
+
+    #logo {
+        padding: 2rem 0;
+        padding-left: 4rem;
+        height: 30%;
+    }
+
+    main {
+        display: block;
+        text-align: left;
+        padding: 2.2rem 0;
+        margin: 0;
+    }
+
+    main p {
+        padding: 1.5rem 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .material-symbols-outlined {
+        top: 0.8rem;
+        right: 7rem;
+    }
+
+    #second {
+        display: flex;
+        align-items: center;
+        order: 2;
+
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #arrow-in-input button {
+        top: -0.1rem;
+        right: 2rem;
+        padding: 1.1rem 2.2rem;
+    }
+
+    .material-symbols-outlined {
+        top: 0.8rem;
+        right: 8rem;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    .attribution {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 1.3rem;
+    }
+
+    html {
+        font-size: 1rem;
+    }
+
+    #arrow-in-input button {
+        position: absolute;
+        top: 0.1rem;
+        right: 3rem;
+        padding: 1.2rem 2.3rem;
+        border: 1px none;
+        background-image: var(--arrow);
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 100vh;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+    input[type=email] {
+        color: var(--desaturated-red);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        border-radius: 2rem;
+        display: block;
+        margin: 0 auto;
+        padding: 1.2rem 0;
+        padding-left: 1rem;
+        outline: none;
+        width: 80%;
+    }
+
+    #logo {
+        padding-left: 12rem;
+        height: 40%;
+    }
+
+    main {
+        display: block;
+        text-align: left;
+        padding: 6rem 8rem;
+        margin: 0;
+    }
+
+    main p {
+        padding: 1.5rem 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .material-symbols-outlined {
+        font-variation-settings:
+            'FILL'1,
+            'wght'700,
+            'GRAD'0,
+            'opsz'48;
+        color: hsl(0, 93%, 68%);
+        position: absolute;
+        top: 1.1rem;
+        right: 10rem;
+        visibility: hidden;
+    }
+
+}
+
+/* Extra large devices (large laptops and desktops, 2560px and up) */
+@media only screen and (min-width: 2560px) {
+
+    .attribution {
+        font-size: 1rem;
+
+    }
+
+    h1 {
+        font-size: 4rem;
+        letter-spacing: 1.3rem;
+    }
+
+    html {
+        font-size: 2rem;
+    }
+
+    #arrow-in-input button {
+        position: absolute;
+        top: 0.05rem;
+        right: 3rem;
+        padding: 1.5rem 3rem;
+        border: 1px none;
+        background-image: var(--arrow);
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        height: 100vh;
+    }
+
+    form {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    form p {
+        padding: 0;
+        margin: 0;
+    }
+
+    input[type=email] {
+        color: var(--desaturated-red);
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        border-radius: 2rem;
+        display: block;
+        margin: 0 auto;
+        padding: 1.2rem 0;
+        padding-left: 1rem;
+        outline: none;
+        width: 80%;
+    }
+
+    #logo {
+        padding-left: 12rem;
+        height: 40%;
+    }
+
+    main {
+        display: block;
+        text-align: left;
+        padding: 4rem 8rem;
+        margin: 0;
+    }
+
+    main p {
+        padding: 1.5rem 0;
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+
+    footer p {
+        font-size: 5rem;
+    }
+
 }
